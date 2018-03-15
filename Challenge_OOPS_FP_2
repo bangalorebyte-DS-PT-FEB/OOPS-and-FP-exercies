@@ -1,0 +1,13 @@
+#Write a generator that creates an endless stream of numbers starting from a value given as argument with a step size of 5
+
+def gen_num(n):
+
+    for i in range(0,n+1,5):
+        yield i
+
+
+it=gen_num(20)
+print(next(it))
+print(next(it))
+print(next(it))
+print(next(it))
